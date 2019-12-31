@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <title>meteo</title>
+
+</head>
+<body>
+    <nav th:insert="navbar"></nav>
+
+    <h1>Meteo</h1>
+    <p th:text="'A l\'adresse ' + ${label}" />
+
+    <h2>Actuellement</h2>
+    <p th:text="'Temperature : ' + ${currentTemperature} +' degres'" />
+    <p th:text="'Humidité : ' + ${currentHumidity} +' %'" />
+
+    <h2>Prévision pour aujourd'hui</h2>
+
+    <p th:text="'Temperature minimum : ' + ${todayTemperatureMin} +' degres'" />
+    <p th:text="'Temperature maximum : ' + ${todayTemperatureMax} +' degres'" />
+    <p th:text="'Precipitation : ' + ${todayPrecipType}" />
+    <p th:text="'Probabilité : ' + ${todayPrecipProbability} +' %'" />
+
+
+    <a href="/adresse">Chercher un autre lieu.</a>
+</body>
+</html>

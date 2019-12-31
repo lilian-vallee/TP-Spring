@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8">
+    <title>adresse</title>
+</head>
+<body>
+    <nav th:insert="navbar"/>
+
+    <h1>Choix de l'adresse :</h1>
+
+    <form action="#" th:action="@{/adresse}" th:object="${adresse}" method="post">
+
+        <p>Entrer une adresse : <input type="text" th:field="*{adresse}" /></p>
+        <p>Code postal : <input type="text" th:field="*{codePostal}" /></p>
+
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
