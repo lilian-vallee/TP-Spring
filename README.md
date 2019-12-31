@@ -10,6 +10,7 @@ Partie 1:
       Thymeleaf : Starter for building MVC web applications using Thymeleaf views
 
   Etape 13:
+  
       1.  Avec quelle partie du code avons-nous param ́etr ́e l’url d’appel /greeting ?
               @RequestParam(name="nameGET", required=false, defaultValue="World")
 
